@@ -88,8 +88,6 @@ $(function() {
         });
 
         _.each(data, function(item) {
-            $bio.removeClass('is-hidden');
-
             if (item.service === 'instagram') {
                 $stream.prepend(templates.instagram({
                     content: item.content,
@@ -110,6 +108,8 @@ $(function() {
                 })).removeClass('is-loading');
             }
         });
+
+        $bio.removeClass('is-hidden');
     }).fail(function() {
         $bio.removeClass('is-hidden');
     });
