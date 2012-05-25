@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=en> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang=en> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang=en> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content=IE=edge>
+    <title>Elving Rodr&iacute;guez</title>
+    <meta name=description content="Husband, Developer, UI/UX Lover, Built rround.me, Hacker at getblimp.com, Gamer, Occasional Guitarist, Paranormal Encyclopedia, Conspiracy Theorist.">
+    <meta name=author content="Elving Rodriguez">
+    <link rel=stylesheet href=css/style.css>
+</head>
+
+<body>
+    <section class="bio is-hidden" role=main>
+        <div class=bio-wrapper>
+            <header class=bio-header>
+                <h1 class=bio-title>Elving Rodr&iacute;guez</h1>
+            </header>
+            <!-- /.bio-header -->
+            <p class=bio-text>
+                Husband, Developer, UI/UX Lover, Built <a href=https://twitter.com/#!/rroundme target=_blank rel=nofollow>@rroundme</a>, Hacker at <a href=https://twitter.com/#!/getblimp target=_blank rel=nofollow>@getblimp</a>, Gamer, Occasional Guitarist, Paranormal Encyclopedia, Conspiracy Theorist.
+            </p>
+            <!-- /.bio-text -->
+            <footer class=bio-footer>
+                <a target=_blank class="bio-social twitter" href=http://twitter.com/elving>Twitter</a>
+                <a target=_blank class="bio-social foursquare" href=https://foursquare.com/elving>Foursquare</a>
+                <a target=_blank class="bio-social forrst" href=http://forrst.me/elving>Forrst</a>
+                <a target=_blank class="bio-social github" href=http://github.com/elving>GitHub</a>
+            </footer>
+            <!-- /.bio-footer -->
+        </div>
+        <!-- /.bio-wrapper -->
+    </section>
+    <!-- /.bio -->
+
+    <ul class="stream is-loading"></ul>
+    <!-- /.bg -->
+
+    <!-- Instagram Template -->
+    <script id=instagram-template type=text/html>
+        <li class="stream-item" data-service="instagram">
+            <div class="stream-item-content">
+                <a href="<%= url %>" target="_blank" rel="nofollow">
+                    <img class="stream-item-img" src="<%= content %>" height="100%" width="100%">
+                    <div class="stream-item-footer"><%= caption %> <%= timeAgo %></div>
+                </a>
+            </div>
+        </li>
+    </script>
+
+    <!-- Twitter Template -->
+    <script id=twitter-template type=text/html>
+        <li class="stream-item" data-service="twitter">
+            <div class="stream-item-content-wrapper">
+                <div class="stream-item-content">
+                    <div class="stream-item-content-bg"></div>
+                    <p class="stream-item-content-text"><%= content %></p>
+                </div>
+            </div>
+            <div class="stream-item-footer"><%= timeAgo %></div>
+        </li>
+    </script>
+
+    <!-- Foursquare Template -->
+    <script id=foursquare-template type=text/html>
+        <li class="stream-item" data-service="foursquare">
+            <div class="stream-item-content">
+                <img class="stream-item-img" src="http://maps.google.com/maps/api/staticmap?center=<%= location.lat %>,<%= location.lng %>   &zoom=14&size=300x300&maptype=roadmap&sensor=false&markers=<%= location.lat %>,<%= location.lng %>" height="100%" width="100%">
+                <div class="stream-item-footer">@ <%= content %> <%= timeAgo %></div>
+            </div>
+        </li>
+    </script>
+
+    <script src=js/libs/jquery.js></script>
+    <script src=js/libs/underscore.js></script>
+    <script src=js/libs/timeago.js></script>
+
+    <script src=js/keys.js></script>
+    <script src=js/script.js></script>
+    <!-- end scripts -->
+
+
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. mathiasbynens.be/notes/async-analytics-snippet -->
+    <script>
+        var _gaq=[['_setAccount','UA-28518733-1'],['_trackPageview'],['_trackPageLoadTime']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+    <!--[if lt IE 9 ]>
+        <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+        <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+</body>
+</html>
